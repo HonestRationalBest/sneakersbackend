@@ -8,7 +8,7 @@ app.use(express.json({ limit: "50mb", extended: true }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/items', (req, res) => {
     res.json(data)
 })
 
